@@ -5,7 +5,10 @@ function loadPost() {
 }
 
 function displayUsers(data){
+    const ul = document.getElementById('user-post');
     for (const user of data){
-        console.log(user.name)
+        const li = document.createComment('li');
+        li.innerText = user.title;
+        ul.appendChild("li");
     }
 }
